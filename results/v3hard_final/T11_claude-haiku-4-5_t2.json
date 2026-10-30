@@ -1,0 +1,17 @@
+{
+  "model": "claude-haiku-4-5",
+  "task_id": "T11",
+  "trial": 2,
+  "raw_output": "12\n2\n6",
+  "grade": {
+    "TaskId": "T11",
+    "ModelId": "claude-haiku-4-5",
+    "TrialNumber": 2,
+    "ExpectedOutput": "12\n2\n4",
+    "ModelPrediction": "12\n2\n6",
+    "ActualOutput": "12\n2\n4",
+    "PredictionMatchesActual": false,
+    "Verdict": "FAIL",
+    "Score": 0
+  }
+}

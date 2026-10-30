@@ -1,0 +1,9 @@
+{
+  "Id": "T35",
+  "Title": "Iterator early termination triggers finally via Dispose",
+  "Concept": "Take(1) disposes the enumerator after 1 element; finally block runs on Dispose",
+  "Difficulty": "Hard",
+  "Code": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nvar seq = GetNumbers();\nConsole.Write(\"X\");\nforeach (var item in seq.Take(1)) { Console.Write(item); }\nIEnumerable<int> GetNumbers() {\n    Console.Write(\"A\");\n    try { yield return 1; Console.Write(\"B\"); yield return 2; }\n    finally { Console.Write(\"C\"); }\n}",
+  "ExpectedOutput": "XA1C",
+  "Prompt": "What does this C# program print? Reply with ONLY the exact output, nothing else.\n\nusing System;\nusing System.Collections.Generic;\nusing System.Linq;\nvar seq = GetNumbers();\nConsole.Write(\"X\");\nforeach (var item in seq.Take(1)) { Console.Write(item); }\nIEnumerable<int> GetNumbers() {\n    Console.Write(\"A\");\n    try { yield return 1; Console.Write(\"B\"); yield return 2; }\n    finally { Console.Write(\"C\"); }\n}"
+}

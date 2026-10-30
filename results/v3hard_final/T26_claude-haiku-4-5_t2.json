@@ -1,0 +1,17 @@
+{
+  "model": "claude-haiku-4-5",
+  "task_id": "T26",
+  "trial": 2,
+  "raw_output": "Base\nDerived",
+  "grade": {
+    "TaskId": "T26",
+    "ModelId": "claude-haiku-4-5",
+    "TrialNumber": 2,
+    "ExpectedOutput": "Base\nDerived",
+    "ModelPrediction": "Base\nDerived",
+    "ActualOutput": "Base\nDerived",
+    "PredictionMatchesActual": true,
+    "Verdict": "PASS",
+    "Score": 100
+  }
+}

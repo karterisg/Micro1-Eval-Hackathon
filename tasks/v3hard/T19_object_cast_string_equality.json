@@ -1,0 +1,9 @@
+{
+  "Id": "T19",
+  "Title": "String == after cast to object uses reference equality",
+  "Concept": "Casting strings to object bypasses string's overloaded == operator, falling back to reference equality",
+  "Difficulty": "Hard",
+  "Code": "using System;\nstring s1 = \"hello\";\nstring s2 = new string(new char[]{'h','e','l','l','o'});\nConsole.WriteLine(s1 == s2);\nConsole.WriteLine((object)s1 == (object)s2);\nConsole.WriteLine(string.IsInterned(s2) != null);",
+  "ExpectedOutput": "True\nFalse\nTrue",
+  "Prompt": "What does this C# program print? Reply with ONLY the exact output, nothing else.\n\nusing System;\nstring s1 = \"hello\";\nstring s2 = new string(new char[]{'h','e','l','l','o'});\nConsole.WriteLine(s1 == s2);\nConsole.WriteLine((object)s1 == (object)s2);\nConsole.WriteLine(string.IsInterned(s2) != null);"
+}

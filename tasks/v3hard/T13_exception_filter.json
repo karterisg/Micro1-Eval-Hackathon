@@ -1,0 +1,9 @@
+{
+  "Id": "T13",
+  "Title": "Exception filter — when clause runs before catch body",
+  "Difficulty": "Hard",
+  "Concept": "when filter evaluates before entering catch block; finally runs after catch",
+  "Code": "using System;\n\nstatic bool Log(string s) { Console.Write(s); return true; }\n\ntry { throw new Exception(); }\ncatch (Exception) when (Log(\"W\")) { Console.Write(\"C\"); }\nfinally { Console.Write(\"F\"); }\nConsole.Write(\"D\");",
+  "ExpectedOutput": "WCFD",
+  "Prompt": "What is the exact output of the following C# program? Write ONLY the output, nothing else.\n\n```csharp\nusing System;\n\nstatic bool Log(string s) { Console.Write(s); return true; }\n\ntry { throw new Exception(); }\ncatch (Exception) when (Log(\"W\")) { Console.Write(\"C\"); }\nfinally { Console.Write(\"F\"); }\nConsole.Write(\"D\");\n```"
+}

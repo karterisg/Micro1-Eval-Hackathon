@@ -1,0 +1,9 @@
+{
+  "Id": "T45",
+  "Title": "Delegate.Remove removes the LAST matching invocation, not all",
+  "Concept": "When the same delegate is added twice, -= removes only the last occurrence; first occurrence remains in the invocation list",
+  "Difficulty": "Hard",
+  "Code": "using System;\nAction a = null;\nAction f1 = () => Console.Write(\"1\");\nAction f2 = () => Console.Write(\"2\");\na += f1;\na += f2;\na += f1;\na -= f1;\na();",
+  "ExpectedOutput": "12",
+  "Prompt": "What does this C# program print? Reply with ONLY the exact output, nothing else.\n\nusing System;\nAction a = null;\nAction f1 = () => Console.Write(\"1\");\nAction f2 = () => Console.Write(\"2\");\na += f1;\na += f2;\na += f1;\na -= f1;\na();"
+}

@@ -1,0 +1,17 @@
+{
+  "model": "claude-haiku-4-5",
+  "task_id": "T13",
+  "trial": 1,
+  "raw_output": "WCF D",
+  "grade": {
+    "TaskId": "T13",
+    "ModelId": "claude-haiku-4-5",
+    "TrialNumber": 1,
+    "ExpectedOutput": "WCFD",
+    "ModelPrediction": "WCF D",
+    "ActualOutput": "WCFD",
+    "PredictionMatchesActual": false,
+    "Verdict": "FAIL",
+    "Score": 0
+  }
+}

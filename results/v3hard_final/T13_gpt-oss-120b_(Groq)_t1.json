@@ -1,0 +1,17 @@
+{
+  "model": "gpt-oss-120b (Groq)",
+  "task_id": "T13",
+  "trial": 1,
+  "raw_output": "WCFD",
+  "grade": {
+    "TaskId": "T13",
+    "ModelId": "gpt-oss-120b (Groq)",
+    "TrialNumber": 1,
+    "ExpectedOutput": "WCFD",
+    "ModelPrediction": "WCFD",
+    "ActualOutput": "WCFD",
+    "PredictionMatchesActual": true,
+    "Verdict": "PASS",
+    "Score": 100
+  }
+}

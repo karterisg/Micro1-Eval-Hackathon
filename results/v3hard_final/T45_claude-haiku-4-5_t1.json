@@ -1,0 +1,17 @@
+{
+  "model": "claude-haiku-4-5",
+  "task_id": "T45",
+  "trial": 1,
+  "raw_output": "2",
+  "grade": {
+    "TaskId": "T45",
+    "ModelId": "claude-haiku-4-5",
+    "TrialNumber": 1,
+    "ExpectedOutput": "12",
+    "ModelPrediction": "2",
+    "ActualOutput": "12",
+    "PredictionMatchesActual": false,
+    "Verdict": "FAIL",
+    "Score": 0
+  }
+}

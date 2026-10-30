@@ -1,0 +1,9 @@
+{
+  "Id": "T33",
+  "Title": "Circular static field initializers — uninitialized value used as 0",
+  "Concept": "When A.X triggers B's static init which reads A.X, A.X is still 0 (default); B.Y=1, A.X=2",
+  "Difficulty": "Hard",
+  "Code": "using System;\nConsole.WriteLine($\"A:{A.X}, B:{B.Y}\");\nclass A { public static int X = B.Y + 1; }\nclass B { public static int Y = A.X + 1; }",
+  "ExpectedOutput": "A:2, B:1",
+  "Prompt": "What does this C# program print? Reply with ONLY the exact output, nothing else.\n\nusing System;\nConsole.WriteLine($\"A:{A.X}, B:{B.Y}\");\nclass A { public static int X = B.Y + 1; }\nclass B { public static int Y = A.X + 1; }"
+}

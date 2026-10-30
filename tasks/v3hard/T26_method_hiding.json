@@ -1,0 +1,9 @@
+{
+  "Id": "T26",
+  "Title": "new keyword hides base method but does NOT override virtual dispatch",
+  "Concept": "public new hides a method for static type calls but does not replace virtual dispatch; calling via Base reference invokes Base.Foo even on a Derived instance",
+  "Difficulty": "Hard",
+  "Code": "using System;\nBase b = new Derived();\nb.Foo();\nDerived d = new Derived();\nd.Foo();\n\nclass Base { public virtual void Foo() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public new void Foo() => Console.WriteLine(\"Derived\"); }",
+  "ExpectedOutput": "Base\nDerived",
+  "Prompt": "What does this C# program print? Reply with ONLY the exact output, nothing else.\n\nusing System;\nBase b = new Derived();\nb.Foo();\nDerived d = new Derived();\nd.Foo();\n\nclass Base { public virtual void Foo() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public new void Foo() => Console.WriteLine(\"Derived\"); }"
+}

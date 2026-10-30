@@ -1,0 +1,9 @@
+{
+  "Id": "T42",
+  "Title": "Nullable<T> arithmetic and comparison with null operand",
+  "Concept": "Arithmetic with a null nullable returns null; comparison operators (>, <, >=, <=) with null always return false, not null",
+  "Difficulty": "Hard",
+  "Code": "using System;\nint? a = null;\nint? b = 5;\nConsole.WriteLine(a + b);\nConsole.WriteLine(a > b);\nConsole.WriteLine(a < b);\nConsole.WriteLine(a == b);\nConsole.WriteLine(a == null);",
+  "ExpectedOutput": "\nFalse\nFalse\nFalse\nTrue",
+  "Prompt": "What does this C# program print? Reply with ONLY the exact output, nothing else.\n\nusing System;\nint? a = null;\nint? b = 5;\nConsole.WriteLine(a + b);\nConsole.WriteLine(a > b);\nConsole.WriteLine(a < b);\nConsole.WriteLine(a == b);\nConsole.WriteLine(a == null);"
+}

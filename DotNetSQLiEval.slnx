@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DotNetSQLiEval.Cli/DotNetSQLiEval.Cli.csproj" />
+    <Project Path="src/DotNetSQLiEval.Core/DotNetSQLiEval.Core.csproj" />
+    <Project Path="src/DotNetSQLiEval.Engine/DotNetSQLiEval.Engine.csproj" />
+    <Project Path="src/DotNetSQLiEval.Providers/DotNetSQLiEval.Providers.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DotNetSQLiEval.Tests/DotNetSQLiEval.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,9 @@
+{
+  "Id": "T23",
+  "Title": "Boxed value types use reference equality, not value equality",
+  "Concept": "Boxing an int to object always allocates a new heap object; == on object compares references, so two separately boxed ints are never ==",
+  "Difficulty": "Hard",
+  "Code": "using System;\nobject a = 127;\nobject b = 127;\nConsole.WriteLine(a == b);\nobject x = 1000;\nobject y = 1000;\nConsole.WriteLine(x == y);",
+  "ExpectedOutput": "False\nFalse",
+  "Prompt": "What does this C# program print? Reply with ONLY the exact output, nothing else.\n\nusing System;\nobject a = 127;\nobject b = 127;\nConsole.WriteLine(a == b);\nobject x = 1000;\nobject y = 1000;\nConsole.WriteLine(x == y);"
+}

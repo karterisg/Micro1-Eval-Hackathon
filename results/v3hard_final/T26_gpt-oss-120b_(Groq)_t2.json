@@ -1,0 +1,17 @@
+{
+  "model": "gpt-oss-120b (Groq)",
+  "task_id": "T26",
+  "trial": 2,
+  "raw_output": "Base\nDerived",
+  "grade": {
+    "TaskId": "T26",
+    "ModelId": "gpt-oss-120b (Groq)",
+    "TrialNumber": 2,
+    "ExpectedOutput": "Base\nDerived",
+    "ModelPrediction": "Base\nDerived",
+    "ActualOutput": "Base\nDerived",
+    "PredictionMatchesActual": true,
+    "Verdict": "PASS",
+    "Score": 100
+  }
+}

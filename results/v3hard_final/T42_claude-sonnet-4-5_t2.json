@@ -1,0 +1,17 @@
+{
+  "model": "claude-sonnet-4-5",
+  "task_id": "T42",
+  "trial": 2,
+  "raw_output": "\u0060\u0060\u0060\n\u003Cblank line\u003E\nFalse\nFalse\nFalse\nTrue\n\u0060\u0060\u0060",
+  "grade": {
+    "TaskId": "T42",
+    "ModelId": "claude-sonnet-4-5",
+    "TrialNumber": 2,
+    "ExpectedOutput": "\nFalse\nFalse\nFalse\nTrue",
+    "ModelPrediction": "\u003Cblank line\u003E\nFalse\nFalse\nFalse\nTrue",
+    "ActualOutput": "\nFalse\nFalse\nFalse\nTrue",
+    "PredictionMatchesActual": false,
+    "Verdict": "FAIL",
+    "Score": 0
+  }
+}

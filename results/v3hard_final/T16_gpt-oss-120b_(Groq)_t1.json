@@ -1,0 +1,17 @@
+{
+  "model": "gpt-oss-120b (Groq)",
+  "task_id": "T16",
+  "trial": 1,
+  "raw_output": "ABC",
+  "grade": {
+    "TaskId": "T16",
+    "ModelId": "gpt-oss-120b (Groq)",
+    "TrialNumber": 1,
+    "ExpectedOutput": "ABC",
+    "ModelPrediction": "ABC",
+    "ActualOutput": "ABC",
+    "PredictionMatchesActual": true,
+    "Verdict": "PASS",
+    "Score": 100
+  }
+}

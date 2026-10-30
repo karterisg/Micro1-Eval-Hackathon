@@ -1,0 +1,9 @@
+{
+  "Id": "T16",
+  "Title": "Delegate -= with lambda never removes",
+  "Concept": "Lambda delegate removal: each lambda literal is a new instance; -= with a new lambda does nothing",
+  "Difficulty": "Hard",
+  "Code": "using System;\nAction d = () => Console.Write(\"A\");\nd += () => Console.Write(\"B\");\nd += () => Console.Write(\"C\");\nd -= () => Console.Write(\"B\");\nd();",
+  "ExpectedOutput": "ABC",
+  "Prompt": "What does this C# program print? Reply with ONLY the exact output, nothing else.\n\nusing System;\nAction d = () => Console.Write(\"A\");\nd += () => Console.Write(\"B\");\nd += () => Console.Write(\"C\");\nd -= () => Console.Write(\"B\");\nd();"
+}

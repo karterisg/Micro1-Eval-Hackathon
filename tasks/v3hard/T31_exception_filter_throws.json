@@ -1,0 +1,9 @@
+{
+  "Id": "T31",
+  "Title": "Exception filter that itself throws — original exception continues",
+  "Concept": "When a when-filter throws, the filter is treated as false; original exception re-searches handlers",
+  "Difficulty": "Hard",
+  "Code": "using System;\nstatic bool Filter() { Console.Write(\"F\"); throw new Exception(\"filter\"); }\ntry { throw new InvalidOperationException(\"body\"); }\ncatch (InvalidOperationException) when (Filter()) { Console.Write(\"A\"); }\ncatch (InvalidOperationException) { Console.Write(\"B\"); }",
+  "ExpectedOutput": "FB",
+  "Prompt": "What does this C# program print? Reply with ONLY the exact output, nothing else.\n\nusing System;\nstatic bool Filter() { Console.Write(\"F\"); throw new Exception(\"filter\"); }\ntry { throw new InvalidOperationException(\"body\"); }\ncatch (InvalidOperationException) when (Filter()) { Console.Write(\"A\"); }\ncatch (InvalidOperationException) { Console.Write(\"B\"); }"
+}

@@ -1,0 +1,17 @@
+{
+  "model": "claude-sonnet-4-5",
+  "task_id": "T26",
+  "trial": 2,
+  "raw_output": "Base\nBase",
+  "grade": {
+    "TaskId": "T26",
+    "ModelId": "claude-sonnet-4-5",
+    "TrialNumber": 2,
+    "ExpectedOutput": "Base\nDerived",
+    "ModelPrediction": "Base\nBase",
+    "ActualOutput": "Base\nDerived",
+    "PredictionMatchesActual": false,
+    "Verdict": "FAIL",
+    "Score": 0
+  }
+}

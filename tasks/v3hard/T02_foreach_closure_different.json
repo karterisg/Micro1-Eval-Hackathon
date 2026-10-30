@@ -1,0 +1,9 @@
+{
+  "Id": "T02",
+  "Title": "foreach loop — different capture behavior than for",
+  "Difficulty": "Hard",
+  "Concept": "foreach creates new variable per iteration (C# 5+), unlike for",
+  "Code": "using System;\nusing System.Collections.Generic;\n\nvar list = new List<int> { 0, 1, 2 };\nvar actions = new List<Action>();\nforeach (var i in list)\n    actions.Add(() => Console.Write(i + \" \"));\nforeach (var a in actions) a();\nConsole.WriteLine();",
+  "ExpectedOutput": "0 1 2 ",
+  "Prompt": "What is the exact output of the following C# program? Write ONLY the output, nothing else. If there are multiple lines, write each on its own line.\n\n```csharp\nusing System;\nusing System.Collections.Generic;\n\nvar list = new List<int> { 0, 1, 2 };\nvar actions = new List<Action>();\nforeach (var i in list)\n    actions.Add(() => Console.Write(i + \" \"));\nforeach (var a in actions) a();\nConsole.WriteLine();\n```"
+}

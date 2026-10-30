@@ -1,0 +1,17 @@
+{
+  "model": "claude-sonnet-4-5",
+  "task_id": "T13",
+  "trial": 1,
+  "raw_output": "WCFD",
+  "grade": {
+    "TaskId": "T13",
+    "ModelId": "claude-sonnet-4-5",
+    "TrialNumber": 1,
+    "ExpectedOutput": "WCFD",
+    "ModelPrediction": "WCFD",
+    "ActualOutput": "WCFD",
+    "PredictionMatchesActual": true,
+    "Verdict": "PASS",
+    "Score": 100
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "model": "claude-sonnet-4-5",
+  "task_id": "T31",
+  "trial": 2,
+  "raw_output": "FB",
+  "grade": {
+    "TaskId": "T31",
+    "ModelId": "claude-sonnet-4-5",
+    "TrialNumber": 2,
+    "ExpectedOutput": "FB",
+    "ModelPrediction": "FB",
+    "ActualOutput": "FB",
+    "PredictionMatchesActual": true,
+    "Verdict": "PASS",
+    "Score": 100
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "model": "claude-haiku-4-5",
+  "task_id": "T35",
+  "trial": 2,
+  "raw_output": "XA1BC",
+  "grade": {
+    "TaskId": "T35",
+    "ModelId": "claude-haiku-4-5",
+    "TrialNumber": 2,
+    "ExpectedOutput": "XA1C",
+    "ModelPrediction": "XA1BC",
+    "ActualOutput": "XA1C",
+    "PredictionMatchesActual": false,
+    "Verdict": "FAIL",
+    "Score": 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "Id": "T28",
+  "Title": "Post-increment returns old value; two i++ in one expression",
+  "Concept": "i++ returns value before increment; j = i++ + i++ evaluates left i++ (0, i→1) then right i++ (1, i→2); j = 0+1 = 1",
+  "Difficulty": "Hard",
+  "Code": "using System;\nint i = 0;\nint j = i++ + i++;\nConsole.WriteLine(i);\nConsole.WriteLine(j);",
+  "ExpectedOutput": "2\n1",
+  "Prompt": "What does this C# program print? Reply with ONLY the exact output, nothing else.\n\nusing System;\nint i = 0;\nint j = i++ + i++;\nConsole.WriteLine(i);\nConsole.WriteLine(j);"
+}
